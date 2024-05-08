@@ -1,11 +1,11 @@
 import satData from "./satData";
 
 
-const Buttons = ({ filterByType, setSat, displaySats }) => {
+const Buttons = ({ filterByType, setSat, orbitTypes }) => {
   
   return (
     <div>
-      {displaySats.map((sat, id) => {
+      {orbitTypes.map((sat, id) => {
         return(
           <button onClick={() => filterByType(sat)} key={id}>
             {sat} Orbit
